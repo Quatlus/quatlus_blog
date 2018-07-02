@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Arduino, 8 x 8 Led Matrix, 2 Potentiometer, Nature of Code"
 date:   2018-07-02 17:47:59 +0200
 categories: jekyll update
