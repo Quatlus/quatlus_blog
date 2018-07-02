@@ -9,9 +9,10 @@ Initialized the first row of the LED Matrix with Mover Objects set to ‘On’. 
 In the next test I will try to include acceleration.
 
 <video  style="display:block; width:100%; height:auto;" autoplay controls loop="loop">
-       <source src="https://quatlus.github.io/quatlus_blog/media/blog1led8x8_b.mp4" type="video/mp4" />
-   </video>
-
+   <source src="https://quatlus.github.io/quatlus_blog/media/blog1led8x8_b.mp4" type="video/mp4" />
+</video>
+\\
+\\
 ---
 
 `led_matrix_1.ino`
