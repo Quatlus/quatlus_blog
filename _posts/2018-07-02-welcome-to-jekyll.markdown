@@ -4,9 +4,9 @@ title:  "Arduino, 8 x 8 Led Matrix, 2 Potentiometer, Nature of Code"
 date:   2018-07-02 17:47:59 +0200
 categories: jekyll update
 ---
-Initialized the first row of th LED Matrix with Mover Objects set to 'On'. The Mover Class is adapted form Dan Shiffmans `Nature of Code` [Video][video1], but dont uses Accelleration. Instead the Velocity is set direcly by the value of the two Potentiometers. The analogeRead gives each Mover Object its own value and so after some time the row pattern dissolves to some random organic "clouds" or "rain" or "fire" pattern.
+Initialized the first row of the LED Matrix with Mover Objects set to ‘On’. The Mover Class is adapted form Dan Shiffmans `Nature of Code` [Video][video1], but doen't use acceleration. Instead the velocity is set direcly by the value of the two potentiometers. The analogRead gives each Mover Object its own value and so after some time the row pattern dissolves to some random organic “clouds”, “rain” or “fire” pattern.
 
-In the next Test I will try to include Accelleration.
+In the next test I will try to include acceleration.
 
 {% highlight ruby %}
 #include "LedControl.h"
