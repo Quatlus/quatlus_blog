@@ -236,13 +236,13 @@ a.red {
 
 /* Theme color utilities */
 .header-background {
-  background-color: #E74727; }
+  background-color: #f5f5f5; }
 
 .header-border {
   border-color: #181818; }
 
 .header-title {
-  color: #fff; }
+  color: #181818; }
 
 .header-text {
   color: #181818; }
@@ -251,10 +251,10 @@ a.red {
   fill: #181818; }
 
 .header-social-accent {
-  fill: #181818; }
+  fill: #E74727; }
 
 .header-link:hover {
-  color: #fff !important; }
+  color: #DC3918 !important; }
 
 .text-accent {
   color: #DC3918; }
@@ -509,5 +509,5 @@ a.red {
   font-weight: bold;
   text-decoration: none !important; }
   .link-primary:hover {
-    color: #E74727;
+    color: #DC3918;
     text-decoration: none !important; }
