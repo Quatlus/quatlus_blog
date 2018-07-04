@@ -34,17 +34,36 @@
 .border-bottom-thick { border-bottom: 2px solid; border-color: currentColor; }
 .border-bottom-thin { border-bottom: 1px solid; border-color: currentColor; }
 .border-top-thick { border-top: 2px solid; border-color: currentColor; }
-.border-top-thin { border-top: 1px solid; border-color: $red-dark; }
+.border-top-thin { border-top: 1px solid; border-color: currentColor; }
 .border-0 { border: 0; }
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
+
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 0%
+	}
+	50% {
+		background-position: 100% 100%
+	}
+	100% {
+		background-position: 0% 00%
+	}
+}
+
+
+.header-background {
+  background: linear-gradient(-0deg,  #ddd, #bbb);
+	background-size: 400% 400%;
+  animation: Gradient 6s infinite;
+ }
 .header-border { border-color: $color-foreground; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
 .header-social { fill: $color-foreground; }
-.header-social-accent { fill: $color-dot-accent; }
+
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
 

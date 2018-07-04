@@ -1,3 +1,12 @@
+.blink_0 {
+  fill: #60fffc; }
+
+.blink_1 {
+  fill: white; }
+
+.blink_2 {
+  fill: #ff606b; }
+
 @font-face {
   font-family: 'bambooregular';
   src: url("bamboo-regular_3-webfont.woff2") format("woff2"), url("bamboo-regular_3-webfont.woff") format("woff");
@@ -54,8 +63,8 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 26px;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 1px;
+  font-family: monospace; }
 
 h3, .h3 {
   font-size: 16px; }
@@ -82,12 +91,12 @@ a:hover {
   text-decoration: underline; }
 
 pre {
-  border-left: 8px solid #ddd;
+  border-left: 8px solid #000;
   margin: 32px 0;
   padding: 16px;
   width: 75%;
   overflow-x: auto;
-  background-color: #c0c0c04f; }
+  background-color: white; }
 
 code {
   color: gray;
@@ -103,12 +112,17 @@ code {
 
 a.red {
   text-decoration: none;
-  background-color: #E74727;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: white; }
+  background-image: linear-gradient(120deg, #ff606b 0%, #ff606b 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: 0.1s;
+  padding: 0 .3em;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
   a.red:hover {
-    text-decoration: none; }
+    background-size: 100% 100%;
+    color: white; }
 
 .prose {
   font-family: monospace;
@@ -118,7 +132,7 @@ a.red {
     .prose a:hover {
       text-decoration: none; }
   .prose p, .prose ol, .prose ul {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 1em;
     width: 100%; }
     @media (min-width: 52em) {
@@ -139,7 +153,7 @@ a.red {
     line-height: 1.375;
     padding-left: 20px;
     margin: 40px 0 40px -16px;
-    border-left: 8px solid #ddd;
+    border-left: 8px solid #000;
     font-style: italic; }
     .prose blockquote p {
       font-size: 24px; }
@@ -232,14 +246,23 @@ a.red {
 
 .border-top-thin {
   border-top: 1px solid;
-  border-color: #DC3918; }
+  border-color: currentColor; }
 
 .border-0 {
   border: 0; }
 
 /* Theme color utilities */
+@keyframes Gradient {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 100%; }
+  100% {
+    background-position: 0% 0%; } }
 .header-background {
-  background-color: #f5f5f5; }
+  background: linear-gradient(0deg, #ddd, #bbb);
+  background-size: 400% 400%;
+  animation: Gradient 6s infinite; }
 
 .header-border {
   border-color: #181818; }
@@ -253,14 +276,11 @@ a.red {
 .header-social {
   fill: #181818; }
 
-.header-social-accent {
-  fill: #E74727; }
-
 .header-link:hover {
-  color: #DC3918 !important; }
+  color: #ff606b !important; }
 
 .text-accent {
-  color: #DC3918; }
+  color: #ff606b; }
 
 /* Layout utilities */
 .container {
@@ -512,5 +532,5 @@ a.red {
   font-weight: bold;
   text-decoration: none !important; }
   .link-primary:hover {
-    color: #DC3918;
+    color: #ff606b;
     text-decoration: none !important; }
