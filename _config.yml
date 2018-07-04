@@ -25,7 +25,7 @@ github_username:  Quatlus
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: jekyll-swiss
+theme: jekyll-theme-cayman
 theme_color: red
 plugins:
   - jekyll-feed
