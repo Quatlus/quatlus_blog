@@ -4,5 +4,6 @@ title: About
 permalink: /about/
 ---
 
+Learning to use GitHub and GitHub Pages for documenting my electric/electronic experiments with the Arduino board and Arduino software.
 
-[jekyll-organization]: https://github.com/jekyll
+[Arduino Homepage](https://www.arduino.cc/ "Arduino Homepage"){: target="blank"} 

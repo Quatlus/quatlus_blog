@@ -1,21 +1,41 @@
 ---
-layout: default
-title:  "Arduino, 8 x 8 Led Matrix, 2 Potentiometer, Nature of Code"
+layout: post
+title:  "Arduino with 8x8 Led Matrix"
 date:   2018-07-02 17:47:59 +0200
 categories: jekyll update
 ---
-Initialized the first row of the LED Matrix with Mover Objects set to ‘On’. The Mover Class is adapted form Dan Shiffmans `Nature of Code` [Video][video1], but doesn't use acceleration. Instead the velocity is set direcly by the value of the two potentiometers. The analogRead gives each Mover Object its own value and so after some time the row pattern dissolves to some random organic pattern.
+## plus two Potentiometers, Nature of Code
 
-In the next test I will try to include acceleration.
+<div class="clearfix mb-4 mt-4 py-1">
+  <div markdown="1" class="col-4 sm-width-full left">
+  [![MAX7219 8x8 LED Matrix-Modul][imagex]][hyperlinkx]
+  </div>
+  <div markdown="1" class="col-4 sm-width-full left  mt-3 mt-lg-0 ml-lg-4 table">
+  [![MAX7219 8x8 LED Matrix-Modul][imagey]][hyperlinky]
+  </div>
+</div>
 
-<video  style="display:block; width:100%; height:auto;" autoplay controls loop="loop">
-   <source src="https://quatlus.github.io/quatlus_blog/media/blog1led8x8_b.mp4" type="video/mp4" />
+
+
+  [hyperlinkx]: {{site.path}}/media/DSC_2560.JPG
+  [imagex]: {{site.path}}/media/DSC_2560.JPG
+
+  [hyperlinky]: {{site.path}}/media/DSC_2561.JPG
+  [imagey]: {{site.path}}/media/DSC_2561.JPG
+
+
+The first row of the LED Matrix is initialized with Mover Objects set to ‘On’. The Mover Class is adapted from Dan Shiffmans __Nature of Code__ [Video][video1]{:target="blank" class="red"}, but doesn't use acceleration. Instead the velocity is set direcly by the value of the two potentiometers. The analogRead gives each Mover Object its own value and so after some time the row pattern dissolves to some random organic pattern.
+
+<video  class="col-4 mb-4 mt-4" style="display:block; height:auto;" autoplay controls loop="loop">
+   <source src="{{site.path}}/media/blog1led8x8_d.mp4" type="video/mp4" />
 </video>
-\\
----
 
-`led_matrix_1.ino`
-{% highlight ruby %}
+<div class="col-4 sm-width-full mt-1 border-top-thin ">
+</div>
+
+### led_matrix_1.ino
+{% highlight cpp %}
+//led_matrix_1.ino
 #include "LedControl.h"
 #include "Mover.h"
 
@@ -74,10 +94,10 @@ void loop() {
 }
 {% endhighlight %}
 
-`Mover.cpp`
-{% highlight ruby %}
+### Mover.cpp
+{% highlight cpp %}
+// Mover.cpp
 #include "Mover.h"
-
 
 Mover::Mover (float x_, float y_, float vx_, float vy_) {
   this->lx = x_;
@@ -137,8 +157,9 @@ int Mover::gety() {
 }
 {% endhighlight %}
 
-`Mover.h`
-{% highlight ruby %}
+### Mover.h
+{% highlight cpp %}
+// Mover.h
 #include <Arduino.h>
 
 class Mover {
@@ -163,4 +184,4 @@ class Mover {
 };
 {% endhighlight %}
 
-[video1]: https://www.youtube.com/watch?v=TQ_WZU5s_VA
+[video1]: https://www.youtube.com/watch?v=TQ_WZU5s_VA "1.5: Acceleration - The Nature of Code"
