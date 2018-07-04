@@ -17,17 +17,17 @@ categories: jekyll update
 
 
 
-  [hyperlinkx]: {{site.path}}/media/DSC_2560.JPG
-  [imagex]: {{site.path}}/media/DSC_2560.JPG
+  [hyperlinkx]: {{site.baseurl}}/media/DSC_2560.JPG
+  [imagex]: {{site.baseurl}}/media/DSC_2560.JPG
 
-  [hyperlinky]: {{site.path}}/media/DSC_2561.JPG
-  [imagey]: {{site.path}}/media/DSC_2561.JPG
+  [hyperlinky]: {{site.baseurl}}/media/DSC_2561.JPG
+  [imagey]: {{site.baseurl}}/media/DSC_2561.JPG
 
 
 The first row of the LED Matrix is initialized with Mover Objects set to ‘On’. The Mover Class is adapted from Dan Shiffmans __Nature of Code__ [Video][video1]{:target="blank" class="red"}, but doesn't use acceleration. Instead the velocity is set direcly by the value of the two potentiometers. The analogRead gives each Mover Object its own value and so after some time the row pattern dissolves to some random organic pattern.
 
 <video  class="col-4 mb-4 mt-4" style="display:block; height:auto;" autoplay controls loop="loop">
-   <source src="{{site.path}}/media/blog1led8x8_d.mp4" type="video/mp4" />
+   <source src="{{site.baseurl}}/media/blog1led8x8_d.mp4" type="video/mp4" />
 </video>
 
 <div class="col-4 sm-width-full mt-1 border-top-thin ">
