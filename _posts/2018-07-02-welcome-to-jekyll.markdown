@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Arduino with 8x8 Led Matrix"
+title:  "Arduino with 8x8 Led Matrix."
 date:   2018-07-02 17:47:59 +0200
 categories: jekyll update
 ---
