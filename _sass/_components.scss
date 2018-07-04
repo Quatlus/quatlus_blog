@@ -15,7 +15,6 @@ code {
     font-size: $body-font-size;
     padding: 1px 0px;
     text-transform: none;
-
     .cp {
       color: #5E6D03;
 
@@ -47,6 +46,9 @@ code {
 
 .prose {
 
+  font-family: $code-font-family;
+  text-transform: none;
+  
   a {
     text-decoration:none;
     &:hover {

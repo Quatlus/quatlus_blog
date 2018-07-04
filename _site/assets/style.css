@@ -110,78 +110,81 @@ a.red {
   a.red:hover {
     text-decoration: none; }
 
-.prose a {
-  text-decoration: none; }
-  .prose a:hover {
+.prose {
+  font-family: monospace;
+  text-transform: none; }
+  .prose a {
     text-decoration: none; }
-.prose p, .prose ol, .prose ul {
-  font-size: 20px;
-  margin-bottom: 1em;
-  width: 100%; }
-  @media (min-width: 52em) {
-    .prose p, .prose ol, .prose ul {
-      width: 83.3333333333%; } }
-.prose ul, .prose ol {
-  padding-left: 40px; }
-.prose li {
-  margin-bottom: 0.5em; }
-  .prose li ul li, .prose li ol li {
-    margin-bottom: 0; }
-.prose img {
-  max-width: 100%; }
-  @media (min-width: 52em) {
-    .prose img {
-      max-width: 120%; } }
-.prose blockquote {
-  line-height: 1.375;
-  padding-left: 20px;
-  margin: 40px 0 40px -16px;
-  border-left: 8px solid #ddd;
-  font-style: italic; }
-  .prose blockquote p {
-    font-size: 24px; }
-  @media (min-width: 52em) {
-    .prose blockquote {
-      padding-left: 32px;
-      margin: 64px 0 64px -40px;
-      max-width: 110%; }
-      .prose blockquote p {
-        font-size: 32px; } }
-.prose hr {
-  color: #181818;
-  border-style: solid;
-  border-width: thin;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
-.prose dt {
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.25; }
-.prose dd {
-  font-style: italic;
-  margin-bottom: 0.5em; }
-.prose table {
-  border-collapse: collapse;
-  display: block;
-  width: 100%;
-  margin-bottom: 1.5em;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all; }
-  .prose table th {
+    .prose a:hover {
+      text-decoration: none; }
+  .prose p, .prose ol, .prose ul {
+    font-size: 20px;
+    margin-bottom: 1em;
+    width: 100%; }
+    @media (min-width: 52em) {
+      .prose p, .prose ol, .prose ul {
+        width: 83.3333333333%; } }
+  .prose ul, .prose ol {
+    padding-left: 40px; }
+  .prose li {
+    margin-bottom: 0.5em; }
+    .prose li ul li, .prose li ol li {
+      margin-bottom: 0; }
+  .prose img {
+    max-width: 100%; }
+    @media (min-width: 52em) {
+      .prose img {
+        max-width: 120%; } }
+  .prose blockquote {
+    line-height: 1.375;
+    padding-left: 20px;
+    margin: 40px 0 40px -16px;
+    border-left: 8px solid #ddd;
+    font-style: italic; }
+    .prose blockquote p {
+      font-size: 24px; }
+    @media (min-width: 52em) {
+      .prose blockquote {
+        padding-left: 32px;
+        margin: 64px 0 64px -40px;
+        max-width: 110%; }
+        .prose blockquote p {
+          font-size: 32px; } }
+  .prose hr {
+    color: #181818;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+  .prose dt {
     font-weight: bold;
-    text-align: left; }
-  .prose table th,
-  .prose table td {
-    padding: 16px 32px 16px 2px;
-    border-top: 1px solid #181818;
-    border-bottom: 1px solid #181818; }
-  .prose table tr {
-    background-color: #fff;
-    border-top: 1px solid #181818; }
-  .prose table tr th {
-    border-top: 2px solid #181818;
-    border-bottom: 2px solid #181818; }
+    font-style: italic;
+    line-height: 1.25; }
+  .prose dd {
+    font-style: italic;
+    margin-bottom: 0.5em; }
+  .prose table {
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; }
+    .prose table th {
+      font-weight: bold;
+      text-align: left; }
+    .prose table th,
+    .prose table td {
+      padding: 16px 32px 16px 2px;
+      border-top: 1px solid #181818;
+      border-bottom: 1px solid #181818; }
+    .prose table tr {
+      background-color: #fff;
+      border-top: 1px solid #181818; }
+    .prose table tr th {
+      border-top: 2px solid #181818;
+      border-bottom: 2px solid #181818; }
 
 /* Type utilities */
 .h0 {
