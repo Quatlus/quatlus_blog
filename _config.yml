@@ -26,10 +26,11 @@ github_username:  Quatlus
 markdown: kramdown
 #theme: minima
 theme: jekyll-swiss
-theme_color: black
+theme_color: red
 plugins:
   - jekyll-feed
 
+future: true
 
 defaults:
   - scope:

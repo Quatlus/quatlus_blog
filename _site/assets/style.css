@@ -1,7 +1,3 @@
-.font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 @font-face {
   font-family: 'bambooregular';
   src: url("bamboo-regular_3-webfont.woff2") format("woff2"), url("bamboo-regular_3-webfont.woff") format("woff");
@@ -107,7 +103,7 @@ code {
 
 a.red {
   text-decoration: none;
-  background-color: #ff0947;
+  background-color: #E74727;
   padding-left: 1em;
   padding-right: 1em;
   color: white; }
@@ -233,35 +229,35 @@ a.red {
 
 .border-top-thin {
   border-top: 1px solid;
-  border-color: #ff0947; }
+  border-color: #DC3918; }
 
 .border-0 {
   border: 0; }
 
 /* Theme color utilities */
 .header-background {
-  background-color: #181818; }
+  background-color: #E74727; }
 
 .header-border {
-  border-color: #fff; }
+  border-color: #181818; }
 
 .header-title {
   color: #fff; }
 
 .header-text {
-  color: #fff; }
+  color: #181818; }
 
 .header-social {
-  fill: #fff; }
+  fill: #181818; }
 
 .header-social-accent {
-  fill: #ff0947; }
+  fill: #181818; }
 
 .header-link:hover {
-  color: #ff0947 !important; }
+  color: #fff !important; }
 
 .text-accent {
-  color: #ff0947; }
+  color: #DC3918; }
 
 /* Layout utilities */
 .container {
@@ -513,5 +509,5 @@ a.red {
   font-weight: bold;
   text-decoration: none !important; }
   .link-primary:hover {
-    color: #ff0947;
+    color: #E74727;
     text-decoration: none !important; }
