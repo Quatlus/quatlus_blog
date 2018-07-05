@@ -111,6 +111,9 @@ code {
   code .k, code .kt {
     color: #00979C; }
 
+.abba {
+  font-family: "abba3000-2regular" !important; }
+
 a.red {
   text-decoration: none;
   background-image: linear-gradient(120deg, #ff606b 0%, #ff606b 100%);
@@ -118,12 +121,13 @@ a.red {
   background-size: 100% 0.2em;
   background-position: 0 100%;
   transition: 0.1s;
-  padding: 0 .3em;
+  padding: 0;
   text-transform: uppercase;
   letter-spacing: 1px; }
   a.red:hover {
     background-size: 100% 100%;
-    color: white; }
+    color: white;
+    padding: .5em 0.5em 0.3em 0.5em; }
 
 .prose {
   font-family: monospace;
