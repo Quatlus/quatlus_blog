@@ -10,6 +10,9 @@
   }
 }
 
+.floatleft {
+  float: left;
+}
 .text-right { text-align: right; }
 
 .no-underline {
@@ -55,9 +58,9 @@
 
 
 .header-background {
-  background: linear-gradient(-0deg,  #ddd, #bbb);
+  background: linear-gradient(-45deg,  #000, #000);
 	background-size: 400% 400%;
-  animation: Gradient 6s infinite;
+  animation: Gradient 16s infinite;
  }
 .header-border { border-color: $color-foreground; }
 .header-title { color: $color-title; }

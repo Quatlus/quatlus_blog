@@ -13,8 +13,8 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'abba3000';
-  src: url("ABBAHALLO3quark-Regular.woff2") format("woff2"), url("ABBAHALLO3quark-Regular.woff") format("woff"), url("ABBAHALLO3quark-Regular.eot") format("eot");
+  font-family: 'abba3000-2regular';
+  src: url("ABBAHALLO6-Regular.woff2") format("woff2"), url("ABBAHALLO6-Regular.woff") format("woff"), url("ABBAHALLO6-Regular.eot") format("eot");
   font-weight: normal;
   font-style: normal; }
 /**
@@ -42,7 +42,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "abba3000";
+  font-family: "abba3000-2regular";
   font-size: 14px;
   line-height: 1.5;
   color: #181818;
@@ -56,7 +56,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
-  margin-bottom: 0.25em; }
+  margin-bottom: 0.25em;
+  font-weight: normal; }
 
 h1, .h1 {
   font-size: 40px; }
@@ -208,7 +209,10 @@ a.red {
   word-wrap: break-word; }
   @media (min-width: 52em) {
     .h0 {
-      font-size: 96px; } }
+      font-size: 128px; } }
+
+.floatleft {
+  float: left; }
 
 .text-right {
   text-align: right; }
@@ -260,21 +264,21 @@ a.red {
   100% {
     background-position: 0% 0%; } }
 .header-background {
-  background: linear-gradient(0deg, #ddd, #bbb);
+  background: linear-gradient(-45deg, #000, #000);
   background-size: 400% 400%;
-  animation: Gradient 6s infinite; }
+  animation: Gradient 16s infinite; }
 
 .header-border {
-  border-color: #181818; }
+  border-color: #fff; }
 
 .header-title {
-  color: #181818; }
+  color: #fff; }
 
 .header-text {
-  color: #181818; }
+  color: #fff; }
 
 .header-social {
-  fill: #181818; }
+  fill: #fff; }
 
 .header-link:hover {
   color: #ff606b !important; }

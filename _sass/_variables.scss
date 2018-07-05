@@ -12,17 +12,20 @@
 }
 
 
+
 @font-face {
-    font-family: 'abba3000';
-    src: url('ABBAHALLO3quark-Regular.woff2') format('woff2'),
-         url('ABBAHALLO3quark-Regular.woff') format('woff'),
-         url('ABBAHALLO3quark-Regular.eot') format('eot');
+    font-family: 'abba3000-2regular';
+    src: url('ABBAHALLO6-Regular.woff2') format('woff2'),
+         url('ABBAHALLO6-Regular.woff') format('woff'),
+         url('ABBAHALLO6-Regular.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 
 }
 
-$body-font-family: "abba3000";
+
+
+$body-font-family: "abba3000-2regular";
 $code-font-family: monospace;
 $body-font-size: 14px;
 $prose-font-size: 16px;
@@ -34,7 +37,7 @@ $prose-font-size: 16px;
 
 // Type scale
 $h0-mobile: 64px;
-$h0-desktop: 96px;
+$h0-desktop: 128px;
 
 $h1-size: 40px !default;
 $h2-size: 26px !default;
