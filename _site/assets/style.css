@@ -63,9 +63,10 @@ h1, .h1 {
   font-size: 40px; }
 
 h2, .h2 {
-  font-size: 26px;
+  font-size: 28px;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: monospace; }
+  font-family: "abba3000-2regular"; }
 
 h3, .h3 {
   font-size: 16px; }
@@ -130,7 +131,7 @@ a.red {
     padding: 0.5em; }
 
 .prose {
-  font-family: monospace;
+  font-family: "abba3000-2regular";
   text-transform: none; }
   .prose a {
     text-decoration: none; }
@@ -537,7 +538,6 @@ a.red {
     text-decoration: none !important; }
 
 .link-primary {
-  font-weight: bold;
   text-decoration: none !important; }
   .link-primary:hover {
     color: #ff606b;
